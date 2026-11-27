@@ -1,0 +1,22 @@
+{
+  "name": "acode-plugin-shadcn-ui-snippets",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node esbuild.config.mjs --serve",
+    "generate:snippets": "node scripts/generate-snippets.mjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "build": "tsc --noEmit && node esbuild.config.mjs"
+  },
+  "dependencies": {
+    "acode-plugin-types": "^1.12.9"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2",
+    "jszip": "^3.10.1",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3"
+  },
+  "browserslist": "cover 100%,not android < 5"
+}

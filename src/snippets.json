@@ -1,0 +1,308 @@
+{
+  "accordion": {
+    "imports": "import {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\"",
+    "jsx": "<Accordion defaultValue={[\"item-1\"]}>\n  <AccordionItem value=\"item-1\">\n    <AccordionTrigger>Is it accessible?</AccordionTrigger>\n    <AccordionContent>\n      Yes. It adheres to the WAI-ARIA design pattern.\n    </AccordionContent>\n  </AccordionItem>\n</Accordion>",
+    "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+    "source": "https://ui.shadcn.com/docs/components/base/accordion"
+  },
+  "alert": {
+    "imports": "import { CheckCircle2Icon, InfoIcon } from \"lucide-react\"\nimport {\n  Alert,\n  AlertDescription,\n  AlertTitle,\n} from \"@/components/ui/alert\"",
+    "jsx": "<div className=\"grid w-full max-w-md items-start gap-4\">\n  <Alert>\n    <CheckCircle2Icon />\n    <AlertTitle>Payment successful</AlertTitle>\n    <AlertDescription>\n      Your payment of $29.99 has been processed. A receipt has been sent to\n      your email address.\n    </AlertDescription>\n  </Alert>\n  <Alert>\n    <InfoIcon />\n    <AlertTitle>New feature available</AlertTitle>\n    <AlertDescription>\n      We&apos;ve added dark mode support. You can enable it in your account\n      settings.\n    </AlertDescription>\n  </Alert>\n</div>",
+    "description": "Displays a callout for user attention.",
+    "source": "https://ui.shadcn.com/docs/components/base/alert"
+  },
+  "alert-dialog": {
+    "imports": "import {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from \"@/components/ui/alert-dialog\"\nimport { Button } from \"@/components/ui/button\"",
+    "jsx": "<AlertDialog>\n  <AlertDialogTrigger render={<Button variant=\"outline\" />}>\n    Show Dialog\n  </AlertDialogTrigger>\n  <AlertDialogContent>\n    <AlertDialogHeader>\n      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>\n      <AlertDialogDescription>\n        This action cannot be undone. This will permanently delete your\n        account from our servers.\n      </AlertDialogDescription>\n    </AlertDialogHeader>\n    <AlertDialogFooter>\n      <AlertDialogCancel>Cancel</AlertDialogCancel>\n      <AlertDialogAction>Continue</AlertDialogAction>\n    </AlertDialogFooter>\n  </AlertDialogContent>\n</AlertDialog>",
+    "description": "A modal dialog that interrupts the user with important content and expects a response.",
+    "source": "https://ui.shadcn.com/docs/components/base/alert-dialog"
+  },
+  "aspect-ratio": {
+    "imports": "import Image from \"next/image\"\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\"",
+    "jsx": "<AspectRatio ratio={16 / 9} className=\"w-full max-w-sm rounded-lg bg-muted\">\n  <Image\n    src=\"https://avatar.vercel.sh/shadcn1\"\n    alt=\"Photo\"\n    fill\n    className=\"rounded-lg object-cover grayscale dark:brightness-20\"\n  />\n</AspectRatio>",
+    "description": "Displays content within a desired ratio.",
+    "source": "https://ui.shadcn.com/docs/components/base/aspect-ratio"
+  },
+  "avatar": {
+    "imports": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"",
+    "jsx": "<Avatar>\n  <AvatarImage src=\"https://github.com/shadcn.png\" />\n  <AvatarFallback>CN</AvatarFallback>\n</Avatar>",
+    "description": "An image element with a fallback for representing the user.",
+    "source": "https://ui.shadcn.com/docs/components/base/avatar"
+  },
+  "badge": {
+    "imports": "import { Badge } from \"@/components/ui/badge\"",
+    "jsx": "<div className=\"flex w-full flex-wrap justify-center gap-2\">\n  <Badge>Badge</Badge>\n  <Badge variant=\"secondary\">Secondary</Badge>\n  <Badge variant=\"destructive\">Destructive</Badge>\n  <Badge variant=\"outline\">Outline</Badge>\n</div>",
+    "description": "Displays a badge or a component that looks like a badge.",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  "breadcrumb": {
+    "imports": "import {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\"",
+    "jsx": "<Breadcrumb>\n  <BreadcrumbList>\n    <BreadcrumbItem>\n      <BreadcrumbLink render={<a href=\"/\" />}>Home</BreadcrumbLink>\n    </BreadcrumbItem>\n    <BreadcrumbSeparator />\n    <BreadcrumbItem>\n      <BreadcrumbLink render={<a href=\"/components\" />}>\n        Components\n      </BreadcrumbLink>\n    </BreadcrumbItem>\n    <BreadcrumbSeparator />\n    <BreadcrumbItem>\n      <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\n    </BreadcrumbItem>\n  </BreadcrumbList>\n</Breadcrumb>",
+    "description": "Displays the path to the current resource using a hierarchy of links.",
+    "source": "https://ui.shadcn.com/docs/components/base/breadcrumb"
+  },
+  "button": {
+    "imports": "import { Button } from \"@/components/ui/button\"",
+    "jsx": "<Button variant=\"outline\">Button</Button>",
+    "description": "Displays a button or a component that looks like a button.",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  "button-group": {
+    "imports": "import { MinusIcon, PlusIcon } from \"lucide-react\"\nimport { Button } from \"@/components/ui/button\"\nimport { ButtonGroup } from \"@/components/ui/button-group\"",
+    "jsx": "<ButtonGroup\n  orientation=\"vertical\"\n  aria-label=\"Media controls\"\n  className=\"h-fit\"\n>\n  <Button variant=\"outline\" size=\"icon\">\n    <PlusIcon />\n  </Button>\n  <Button variant=\"outline\" size=\"icon\">\n    <MinusIcon />\n  </Button>\n</ButtonGroup>",
+    "description": "A container that groups related buttons together with consistent styling.",
+    "source": "https://ui.shadcn.com/docs/components/base/button-group"
+  },
+  "calendar": {
+    "imports": "import { Calendar } from \"@/components/ui/calendar\"",
+    "jsx": "<Calendar mode=\"single\" className=\"rounded-lg border\" />",
+    "description": "A calendar component that allows users to select a date or a range of dates.",
+    "source": "https://ui.shadcn.com/docs/components/base/calendar"
+  },
+  "card": {
+    "imports": "import {\n  Card,\n  CardAction,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"",
+    "jsx": "<Card>\n  <CardHeader>\n    <CardTitle>Card Title</CardTitle>\n    <CardDescription>Card Description</CardDescription>\n    <CardAction>Card Action</CardAction>\n  </CardHeader>\n  <CardContent>\n    <p>Card Content</p>\n  </CardContent>\n  <CardFooter>\n    <p>Card Footer</p>\n  </CardFooter>\n</Card>",
+    "description": "Displays a card with header, content, and footer.",
+    "source": "https://ui.shadcn.com/docs/components/base/card"
+  },
+  "carousel": {
+    "imports": "import {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\"",
+    "jsx": "<Carousel>\n  <CarouselContent>\n    <CarouselItem>...</CarouselItem>\n    <CarouselItem>...</CarouselItem>\n    <CarouselItem>...</CarouselItem>\n  </CarouselContent>\n  <CarouselPrevious />\n  <CarouselNext />\n</Carousel>",
+    "description": "A carousel with motion and swipe built using Embla.",
+    "source": "https://ui.shadcn.com/docs/components/base/carousel"
+  },
+  "checkbox": {
+    "imports": "import { Checkbox } from \"@/components/ui/checkbox\"",
+    "jsx": "<Checkbox />",
+    "description": "A control that allows the user to toggle between checked and not checked.",
+    "source": "https://ui.shadcn.com/docs/components/base/checkbox"
+  },
+  "collapsible": {
+    "imports": "import {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\"",
+    "jsx": "<Collapsible>\n  <CollapsibleTrigger>Can I use this in my project?</CollapsibleTrigger>\n  <CollapsibleContent>\n    Yes. Free to use for personal and commercial projects. No attribution\n    required.\n  </CollapsibleContent>\n</Collapsible>",
+    "description": "An interactive component which expands/collapses a panel.",
+    "source": "https://ui.shadcn.com/docs/components/base/collapsible"
+  },
+  "command": {
+    "imports": "import {\n  Command,\n  CommandDialog,\n  CommandEmpty,\n  CommandGroup,\n  CommandInput,\n  CommandItem,\n  CommandList,\n  CommandSeparator,\n  CommandShortcut,\n} from \"@/components/ui/command\"",
+    "jsx": "<Command className=\"max-w-sm rounded-lg border\">\n  <CommandInput placeholder=\"Type a command or search...\" />\n  <CommandList>\n    <CommandEmpty>No results found.</CommandEmpty>\n    <CommandGroup heading=\"Suggestions\">\n      <CommandItem>Calendar</CommandItem>\n      <CommandItem>Search Emoji</CommandItem>\n      <CommandItem>Calculator</CommandItem>\n    </CommandGroup>\n    <CommandSeparator />\n    <CommandGroup heading=\"Settings\">\n      <CommandItem>Profile</CommandItem>\n      <CommandItem>Billing</CommandItem>\n      <CommandItem>Settings</CommandItem>\n    </CommandGroup>\n  </CommandList>\n</Command>",
+    "description": "Command menu for search and quick actions.",
+    "source": "https://ui.shadcn.com/docs/components/base/command"
+  },
+  "context-menu": {
+    "imports": "import {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuItem,\n  ContextMenuTrigger,\n} from \"@/components/ui/context-menu\"",
+    "jsx": "<ContextMenu>\n  <ContextMenuTrigger>Right click here</ContextMenuTrigger>\n  <ContextMenuContent>\n    <ContextMenuItem>Profile</ContextMenuItem>\n    <ContextMenuItem>Billing</ContextMenuItem>\n    <ContextMenuItem>Team</ContextMenuItem>\n    <ContextMenuItem>Subscription</ContextMenuItem>\n  </ContextMenuContent>\n</ContextMenu>",
+    "description": "Displays a menu of actions triggered by a right click.",
+    "source": "https://ui.shadcn.com/docs/components/base/context-menu"
+  },
+  "dialog": {
+    "imports": "import {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/components/ui/dialog\"",
+    "jsx": "<Dialog>\n  <DialogTrigger>Open</DialogTrigger>\n  <DialogContent>\n    <DialogHeader>\n      <DialogTitle>Are you absolutely sure?</DialogTitle>\n      <DialogDescription>\n        This action cannot be undone. This will permanently delete your account\n        and remove your data from our servers.\n      </DialogDescription>\n    </DialogHeader>\n  </DialogContent>\n</Dialog>",
+    "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
+    "source": "https://ui.shadcn.com/docs/components/base/dialog"
+  },
+  "direction": {
+    "imports": "import { DirectionProvider } from \"@/components/ui/direction\"",
+    "jsx": "<html dir=\"rtl\">\n  <body>\n    <DirectionProvider direction=\"rtl\">\n      {/* Your app content */}\n    </DirectionProvider>\n  </body>\n</html>",
+    "description": "A provider component that sets the text direction for your application.",
+    "source": "https://ui.shadcn.com/docs/components/base/direction"
+  },
+  "drawer": {
+    "imports": "import { Button } from \"@/components/ui/button\"\nimport {\n  Drawer,\n  DrawerClose,\n  DrawerContent,\n  DrawerDescription,\n  DrawerFooter,\n  DrawerHeader,\n  DrawerTitle,\n  DrawerTrigger,\n} from \"@/components/ui/drawer\"",
+    "jsx": "<Drawer swipeDirection=\"left\">\n  <DrawerTrigger render={<Button variant=\"secondary\" />}>\n    Open Left Drawer\n  </DrawerTrigger>\n  <DrawerContent>\n    <DrawerHeader>\n      <DrawerTitle>Move Goal</DrawerTitle>\n      <DrawerDescription>Set your daily activity goal.</DrawerDescription>\n    </DrawerHeader>\n    <div className=\"flex-1 p-4\">\n      <div className=\"size-full rounded-2xl bg-muted\" />\n    </div>\n    <DrawerFooter>\n      <DrawerClose render={<Button />}>Close</DrawerClose>\n    </DrawerFooter>\n  </DrawerContent>\n</Drawer>",
+    "description": "A drawer component for React.",
+    "source": "https://ui.shadcn.com/docs/components/base/drawer"
+  },
+  "dropdown-menu": {
+    "imports": "import { Button } from \"@/components/ui/button\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"",
+    "jsx": "<DropdownMenu>\n  <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\n    Open\n  </DropdownMenuTrigger>\n  <DropdownMenuContent>\n    <DropdownMenuGroup>\n      <DropdownMenuLabel>My Account</DropdownMenuLabel>\n      <DropdownMenuItem>Profile</DropdownMenuItem>\n      <DropdownMenuItem>Billing</DropdownMenuItem>\n    </DropdownMenuGroup>\n    <DropdownMenuSeparator />\n    <DropdownMenuGroup>\n      <DropdownMenuItem>Team</DropdownMenuItem>\n      <DropdownMenuItem>Subscription</DropdownMenuItem>\n    </DropdownMenuGroup>\n  </DropdownMenuContent>\n</DropdownMenu>",
+    "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+    "source": "https://ui.shadcn.com/docs/components/base/dropdown-menu"
+  },
+  "empty": {
+    "imports": "import { IconFolderCode } from \"@tabler/icons-react\"\nimport { ArrowUpRightIcon } from \"lucide-react\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Empty,\n  EmptyContent,\n  EmptyDescription,\n  EmptyHeader,\n  EmptyMedia,\n  EmptyTitle,\n} from \"@/components/ui/empty\"",
+    "jsx": "<Empty>\n  <EmptyHeader>\n    <EmptyMedia variant=\"icon\">\n      <IconFolderCode />\n    </EmptyMedia>\n    <EmptyTitle>No Projects Yet</EmptyTitle>\n    <EmptyDescription>\n      You haven&apos;t created any projects yet. Get started by creating\n      your first project.\n    </EmptyDescription>\n  </EmptyHeader>\n  <EmptyContent className=\"flex-row justify-center gap-2\">\n    <Button>Create Project</Button>\n    <Button variant=\"outline\">Import Project</Button>\n  </EmptyContent>\n  <Button\n    variant=\"link\"\n    render={<a href=\"#\" />}\n    className=\"text-muted-foreground\"\n    size=\"sm\"\n    nativeButton={false}\n  >\n    Learn More <ArrowUpRightIcon />\n  </Button>\n</Empty>",
+    "description": "Use the Empty component to display an empty state.",
+    "source": "https://ui.shadcn.com/docs/components/base/empty"
+  },
+  "field": {
+    "imports": "import {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldSet,\n} from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"",
+    "jsx": "<FieldSet className=\"w-full max-w-xs\">\n  <FieldGroup>\n    <Field>\n      <FieldLabel htmlFor=\"username\">Username</FieldLabel>\n      <Input id=\"username\" type=\"text\" placeholder=\"Max Leiter\" />\n      <FieldDescription>\n        Choose a unique username for your account.\n      </FieldDescription>\n    </Field>\n    <Field>\n      <FieldLabel htmlFor=\"password\">Password</FieldLabel>\n      <FieldDescription>\n        Must be at least 8 characters long.\n      </FieldDescription>\n      <Input id=\"password\" type=\"password\" placeholder=\"••••••••\" />\n    </Field>\n  </FieldGroup>\n</FieldSet>",
+    "description": "Combine labels, controls, and help text to compose accessible form fields and grouped inputs.",
+    "source": "https://ui.shadcn.com/docs/components/base/field"
+  },
+  "hover-card": {
+    "imports": "import {\n  HoverCard,\n  HoverCardContent,\n  HoverCardTrigger,\n} from \"@/components/ui/hover-card\"",
+    "jsx": "<HoverCard>\n  <HoverCardTrigger>Hover</HoverCardTrigger>\n  <HoverCardContent>\n    The React Framework – created and maintained by @vercel.\n  </HoverCardContent>\n</HoverCard>",
+    "description": "For sighted users to preview content available behind a link.",
+    "source": "https://ui.shadcn.com/docs/components/base/hover-card"
+  },
+  "input": {
+    "imports": "import { Input } from \"@/components/ui/input\"",
+    "jsx": "<Input />",
+    "description": "A text input component for forms and user data entry with built-in styling and accessibility features.",
+    "source": "https://ui.shadcn.com/docs/components/base/input"
+  },
+  "input-group": {
+    "imports": "import { Search } from \"lucide-react\"\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n} from \"@/components/ui/input-group\"",
+    "jsx": "<InputGroup className=\"max-w-xs\">\n  <InputGroupInput placeholder=\"Search...\" />\n  <InputGroupAddon>\n    <Search />\n  </InputGroupAddon>\n  <InputGroupAddon align=\"inline-end\">12 results</InputGroupAddon>\n</InputGroup>",
+    "description": "Add addons, buttons, and helper content to inputs.",
+    "source": "https://ui.shadcn.com/docs/components/base/input-group"
+  },
+  "input-otp": {
+    "imports": "import {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSeparator,\n  InputOTPSlot,\n} from \"@/components/ui/input-otp\"",
+    "jsx": "<InputOTP maxLength={6}>\n  <InputOTPGroup>\n    <InputOTPSlot index={0} />\n    <InputOTPSlot index={1} />\n    <InputOTPSlot index={2} />\n  </InputOTPGroup>\n  <InputOTPSeparator />\n  <InputOTPGroup>\n    <InputOTPSlot index={3} />\n    <InputOTPSlot index={4} />\n    <InputOTPSlot index={5} />\n  </InputOTPGroup>\n</InputOTP>",
+    "description": "Accessible one-time password component with copy-paste functionality.",
+    "source": "https://ui.shadcn.com/docs/components/base/input-otp"
+  },
+  "item": {
+    "imports": "import { BadgeCheckIcon, ChevronRightIcon } from \"lucide-react\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Item,\n  ItemActions,\n  ItemContent,\n  ItemDescription,\n  ItemMedia,\n  ItemTitle,\n} from \"@/components/ui/item\"",
+    "jsx": "<div className=\"flex w-full max-w-md flex-col gap-6\">\n  <Item variant=\"outline\">\n    <ItemContent>\n      <ItemTitle>Basic Item</ItemTitle>\n      <ItemDescription>\n        A simple item with title and description.\n      </ItemDescription>\n    </ItemContent>\n    <ItemActions>\n      <Button variant=\"outline\" size=\"sm\">\n        Action\n      </Button>\n    </ItemActions>\n  </Item>\n  <Item variant=\"outline\" size=\"sm\" render={<a href=\"#\" />}>\n    <ItemMedia>\n      <BadgeCheckIcon className=\"size-5\" />\n    </ItemMedia>\n    <ItemContent>\n      <ItemTitle>Your profile has been verified.</ItemTitle>\n    </ItemContent>\n    <ItemActions>\n      <ChevronRightIcon className=\"size-4\" />\n    </ItemActions>\n  </Item>\n</div>",
+    "description": "A versatile component for displaying content with media, title, description, and actions.",
+    "source": "https://ui.shadcn.com/docs/components/base/item"
+  },
+  "kbd": {
+    "imports": "import { Kbd } from \"@/components/ui/kbd\"",
+    "jsx": "<Kbd>Ctrl</Kbd>",
+    "description": "Used to display textual user input from keyboard.",
+    "source": "https://ui.shadcn.com/docs/components/base/kbd"
+  },
+  "label": {
+    "imports": "import { Label } from \"@/components/ui/label\"",
+    "jsx": "<Label htmlFor=\"email\">Your email address</Label>",
+    "description": "Renders an accessible label associated with controls.",
+    "source": "https://ui.shadcn.com/docs/components/base/label"
+  },
+  "menubar": {
+    "imports": "import {\n  Menubar,\n  MenubarContent,\n  MenubarGroup,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarShortcut,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"",
+    "jsx": "<Menubar>\n  <MenubarMenu>\n    <MenubarTrigger>File</MenubarTrigger>\n    <MenubarContent>\n      <MenubarGroup>\n        <MenubarItem>\n          New Tab <MenubarShortcut>⌘T</MenubarShortcut>\n        </MenubarItem>\n        <MenubarItem>New Window</MenubarItem>\n      </MenubarGroup>\n      <MenubarSeparator />\n      <MenubarGroup>\n        <MenubarItem>Share</MenubarItem>\n        <MenubarItem>Print</MenubarItem>\n      </MenubarGroup>\n    </MenubarContent>\n  </MenubarMenu>\n</Menubar>",
+    "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+    "source": "https://ui.shadcn.com/docs/components/base/menubar"
+  },
+  "native-select": {
+    "imports": "import {\n  NativeSelect,\n  NativeSelectOptGroup,\n  NativeSelectOption,\n} from \"@/components/ui/native-select\"",
+    "jsx": "<NativeSelect>\n  <NativeSelectOption value=\"\">Select a fruit</NativeSelectOption>\n  <NativeSelectOption value=\"apple\">Apple</NativeSelectOption>\n  <NativeSelectOption value=\"banana\">Banana</NativeSelectOption>\n  <NativeSelectOption value=\"blueberry\">Blueberry</NativeSelectOption>\n  <NativeSelectOption value=\"pineapple\">Pineapple</NativeSelectOption>\n</NativeSelect>",
+    "description": "A styled native HTML select element with consistent design system integration.",
+    "source": "https://ui.shadcn.com/docs/components/base/native-select"
+  },
+  "navigation-menu": {
+    "imports": "import {\n  NavigationMenu,\n  NavigationMenuContent,\n  NavigationMenuItem,\n  NavigationMenuLink,\n  NavigationMenuList,\n  NavigationMenuTrigger,\n} from \"@/components/ui/navigation-menu\"",
+    "jsx": "<NavigationMenu>\n  <NavigationMenuList>\n    <NavigationMenuItem>\n      <NavigationMenuTrigger>Item One</NavigationMenuTrigger>\n      <NavigationMenuContent>\n        <NavigationMenuLink>Link</NavigationMenuLink>\n      </NavigationMenuContent>\n    </NavigationMenuItem>\n  </NavigationMenuList>\n</NavigationMenu>",
+    "description": "A collection of links for navigating websites.",
+    "source": "https://ui.shadcn.com/docs/components/base/navigation-menu"
+  },
+  "pagination": {
+    "imports": "import {\n  Pagination,\n  PaginationContent,\n  PaginationEllipsis,\n  PaginationItem,\n  PaginationLink,\n  PaginationNext,\n  PaginationPrevious,\n} from \"@/components/ui/pagination\"",
+    "jsx": "<Pagination>\n  <PaginationContent>\n    <PaginationItem>\n      <PaginationPrevious href=\"#\" />\n    </PaginationItem>\n    <PaginationItem>\n      <PaginationLink href=\"#\">1</PaginationLink>\n    </PaginationItem>\n    <PaginationItem>\n      <PaginationLink href=\"#\" isActive>\n        2\n      </PaginationLink>\n    </PaginationItem>\n    <PaginationItem>\n      <PaginationLink href=\"#\">3</PaginationLink>\n    </PaginationItem>\n    <PaginationItem>\n      <PaginationEllipsis />\n    </PaginationItem>\n    <PaginationItem>\n      <PaginationNext href=\"#\" />\n    </PaginationItem>\n  </PaginationContent>\n</Pagination>",
+    "description": "Pagination with page navigation, next and previous links.",
+    "source": "https://ui.shadcn.com/docs/components/base/pagination"
+  },
+  "popover": {
+    "imports": "import { Button } from \"@/components/ui/button\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\nimport {\n  Popover,\n  PopoverContent,\n  PopoverTrigger,\n} from \"@/components/ui/popover\"",
+    "jsx": "<Popover>\n  <PopoverTrigger render={<Button variant=\"outline\" />}>\n    Open popover\n  </PopoverTrigger>\n  <PopoverContent className=\"w-80\">\n    <div className=\"grid gap-4\">\n      <div className=\"space-y-2\">\n        <h4 className=\"leading-none font-medium\">Dimensions</h4>\n        <p className=\"text-sm text-muted-foreground\">\n          Set the dimensions for the layer.\n        </p>\n      </div>\n      <div className=\"grid gap-2\">\n        <div className=\"grid grid-cols-3 items-center gap-4\">\n          <Label htmlFor=\"width\">Width</Label>\n          <Input\n            id=\"width\"\n            defaultValue=\"100%\"\n            className=\"col-span-2 h-8\"\n          />\n        </div>\n        <div className=\"grid grid-cols-3 items-center gap-4\">\n          <Label htmlFor=\"maxWidth\">Max. width</Label>\n          <Input\n            id=\"maxWidth\"\n            defaultValue=\"300px\"\n            className=\"col-span-2 h-8\"\n          />\n        </div>\n        <div className=\"grid grid-cols-3 items-center gap-4\">\n          <Label htmlFor=\"height\">Height</Label>\n          <Input\n            id=\"height\"\n            defaultValue=\"25px\"\n            className=\"col-span-2 h-8\"\n          />\n        </div>\n        <div className=\"grid grid-cols-3 items-center gap-4\">\n          <Label htmlFor=\"maxHeight\">Max. height</Label>\n          <Input\n            id=\"maxHeight\"\n            defaultValue=\"none\"\n            className=\"col-span-2 h-8\"\n          />\n        </div>\n      </div>\n    </div>\n  </PopoverContent>\n</Popover>",
+    "description": "Displays rich content in a portal, triggered by a button.",
+    "source": "https://ui.shadcn.com/docs/components/base/popover"
+  },
+  "progress": {
+    "imports": "import { Progress } from \"@/components/ui/progress\"",
+    "jsx": "<Progress value={33} />",
+    "description": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    "source": "https://ui.shadcn.com/docs/components/base/progress"
+  },
+  "radio-group": {
+    "imports": "import { Label } from \"@/components/ui/label\"\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"",
+    "jsx": "<RadioGroup defaultValue=\"option-one\">\n  <div className=\"flex items-center gap-3\">\n    <RadioGroupItem value=\"option-one\" id=\"option-one\" />\n    <Label htmlFor=\"option-one\">Option One</Label>\n  </div>\n  <div className=\"flex items-center gap-3\">\n    <RadioGroupItem value=\"option-two\" id=\"option-two\" />\n    <Label htmlFor=\"option-two\">Option Two</Label>\n  </div>\n</RadioGroup>",
+    "description": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+    "source": "https://ui.shadcn.com/docs/components/base/radio-group"
+  },
+  "resizable": {
+    "imports": "import {\n  ResizableHandle,\n  ResizablePanel,\n  ResizablePanelGroup,\n} from \"@/components/ui/resizable\"",
+    "jsx": "<ResizablePanelGroup orientation=\"horizontal\">\n  <ResizablePanel>One</ResizablePanel>\n  <ResizableHandle />\n  <ResizablePanel>Two</ResizablePanel>\n</ResizablePanelGroup>",
+    "description": "Accessible resizable panel groups and layouts with keyboard support.",
+    "source": "https://ui.shadcn.com/docs/components/base/resizable"
+  },
+  "scroll-area": {
+    "imports": "import { ScrollArea, ScrollBar } from \"@/components/ui/scroll-area\"",
+    "jsx": "<ScrollArea className=\"h-[200px] w-[350px] rounded-md border p-4\">\n  Your scrollable content here.\n</ScrollArea>",
+    "description": "Augments native scroll functionality for custom, cross-browser styling.",
+    "source": "https://ui.shadcn.com/docs/components/base/scroll-area"
+  },
+  "separator": {
+    "imports": "import { Separator } from \"@/components/ui/separator\"",
+    "jsx": "<Separator />",
+    "description": "Visually or semantically separates content.",
+    "source": "https://ui.shadcn.com/docs/components/base/separator"
+  },
+  "sheet": {
+    "imports": "import {\n  Sheet,\n  SheetClose,\n  SheetContent,\n  SheetDescription,\n  SheetFooter,\n  SheetHeader,\n  SheetTitle,\n  SheetTrigger,\n} from \"@/components/ui/sheet\"",
+    "jsx": "<Sheet>\n  <SheetTrigger>Open</SheetTrigger>\n  <SheetContent>\n    <SheetHeader>\n      <SheetTitle>Are you absolutely sure?</SheetTitle>\n      <SheetDescription>This action cannot be undone.</SheetDescription>\n    </SheetHeader>\n  </SheetContent>\n</Sheet>",
+    "description": "Extends the Dialog component to display content that complements the main content of the screen.",
+    "source": "https://ui.shadcn.com/docs/components/base/sheet"
+  },
+  "skeleton": {
+    "imports": "import { Skeleton } from \"@/components/ui/skeleton\"",
+    "jsx": "<Skeleton className=\"h-[20px] w-[100px] rounded-full\" />",
+    "description": "Use to show a placeholder while content is loading.",
+    "source": "https://ui.shadcn.com/docs/components/base/skeleton"
+  },
+  "slider": {
+    "imports": "import { Slider } from \"@/components/ui/slider\"",
+    "jsx": "<Slider defaultValue={[33]} max={100} step={1} />",
+    "description": "An input where the user selects a value from within a given range.",
+    "source": "https://ui.shadcn.com/docs/components/base/slider"
+  },
+  "spinner": {
+    "imports": "import { Spinner } from \"@/components/ui/spinner\"",
+    "jsx": "<Spinner />",
+    "description": "An indicator that can be used to show a loading state.",
+    "source": "https://ui.shadcn.com/docs/components/base/spinner"
+  },
+  "switch": {
+    "imports": "import { Switch } from \"@/components/ui/switch\"",
+    "jsx": "<Switch />",
+    "description": "A control that allows the user to toggle between checked and not checked.",
+    "source": "https://ui.shadcn.com/docs/components/base/switch"
+  },
+  "table": {
+    "imports": "import {\n  Table,\n  TableBody,\n  TableCaption,\n  TableCell,\n  TableHead,\n  TableHeader,\n  TableRow,\n} from \"@/components/ui/table\"",
+    "jsx": "<Table>\n  <TableCaption>A list of your recent invoices.</TableCaption>\n  <TableHeader>\n    <TableRow>\n      <TableHead className=\"w-[100px]\">Invoice</TableHead>\n      <TableHead>Status</TableHead>\n      <TableHead>Method</TableHead>\n      <TableHead className=\"text-right\">Amount</TableHead>\n    </TableRow>\n  </TableHeader>\n  <TableBody>\n    <TableRow>\n      <TableCell className=\"font-medium\">INV001</TableCell>\n      <TableCell>Paid</TableCell>\n      <TableCell>Credit Card</TableCell>\n      <TableCell className=\"text-right\">$250.00</TableCell>\n    </TableRow>\n  </TableBody>\n</Table>",
+    "description": "A responsive table component.",
+    "source": "https://ui.shadcn.com/docs/components/base/table"
+  },
+  "tabs": {
+    "imports": "import { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\"",
+    "jsx": "<Tabs defaultValue=\"account\" className=\"w-[400px]\">\n  <TabsList>\n    <TabsTrigger value=\"account\">Account</TabsTrigger>\n    <TabsTrigger value=\"password\">Password</TabsTrigger>\n  </TabsList>\n  <TabsContent value=\"account\">Make changes to your account here.</TabsContent>\n  <TabsContent value=\"password\">Change your password here.</TabsContent>\n</Tabs>",
+    "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    "source": "https://ui.shadcn.com/docs/components/base/tabs"
+  },
+  "textarea": {
+    "imports": "import { Textarea } from \"@/components/ui/textarea\"",
+    "jsx": "<Textarea />",
+    "description": "Displays a form textarea or a component that looks like a textarea.",
+    "source": "https://ui.shadcn.com/docs/components/base/textarea"
+  },
+  "toggle": {
+    "imports": "import { Toggle } from \"@/components/ui/toggle\"",
+    "jsx": "<Toggle>Toggle</Toggle>",
+    "description": "A two-state button that can be either on or off.",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle"
+  },
+  "toggle-group": {
+    "imports": "import { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"",
+    "jsx": "<ToggleGroup type=\"single\">\n  <ToggleGroupItem value=\"a\">A</ToggleGroupItem>\n  <ToggleGroupItem value=\"b\">B</ToggleGroupItem>\n  <ToggleGroupItem value=\"c\">C</ToggleGroupItem>\n</ToggleGroup>",
+    "description": "A set of two-state buttons that can be toggled on or off.",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle-group"
+  },
+  "tooltip": {
+    "imports": "import {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"",
+    "jsx": "<Tooltip>\n  <TooltipTrigger>Hover</TooltipTrigger>\n  <TooltipContent>\n    <p>Add to library</p>\n  </TooltipContent>\n</Tooltip>",
+    "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    "source": "https://ui.shadcn.com/docs/components/base/tooltip"
+  },
+  "trace": {
+    "imports": "import { GitBranchIcon } from \"lucide-react\"\nimport {\n  Trace,\n  TraceIcon,\n  TraceLine,\n  TraceTitle,\n} from \"@/components/ui/trace\"",
+    "jsx": "<Trace className=\"max-w-sm\">\n  <TraceLine>\n    <TraceIcon>\n      <GitBranchIcon />\n    </TraceIcon>\n    <TraceTitle>Created branch fix/frozen-lockfile</TraceTitle>\n  </TraceLine>\n</Trace>",
+    "description": "The building block for reasoning, tool calls, sources and more.",
+    "source": "https://ui.shadcn.com/docs/components/base/trace"
+  }
+}

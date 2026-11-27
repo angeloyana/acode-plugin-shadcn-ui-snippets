@@ -1,0 +1,20 @@
+{
+  "$schema": "https://acode.app/schema/plugin/v0.1.0.json",
+  "id": "acode.plugin.shadcn_ui_snippets",
+  "name": "shadcn/ui Snippets",
+  "main": "main.js",
+  "version": "1.0.0",
+  "readme": "readme.md",
+  "changelogs": "changelogs.md",
+  "icon": "icon.png",
+  "files": [],
+  "minVersionCode": 290,
+  "license": "MIT",
+  "keywords": ["shadcn", "react", "snippets"],
+  "price": 0,
+  "author": {
+    "name": "Angelo Yana",
+    "email": "angelocyana@gmail.com",
+    "github": "angeloyana"
+  }
+}

@@ -1,0 +1,4 @@
+pnpm-lock.yaml
+dist/
+esbuild.config.mjs
+pack-zip.js
