@@ -1,0 +1,205 @@
+[
+  {
+    "type": "component",
+    "name": "badge-secondary",
+    "description": "Displays a badge with the secondary style.",
+    "content": "<Badge variant=\"secondary\">Secondary</Badge>",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  {
+    "type": "component",
+    "name": "badge-destructive",
+    "description": "Displays a badge with the destructive style.",
+    "content": "<Badge variant=\"destructive\">Destructive</Badge>",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  {
+    "type": "component",
+    "name": "badge-outline",
+    "description": "Displays a badge with the outline style.",
+    "content": "<Badge variant=\"outline\">Outline</Badge>",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  {
+    "type": "component",
+    "name": "badge-ghost",
+    "description": "Displays a badge with the ghost style.",
+    "content": "<Badge variant=\"ghost\">Ghost</Badge>",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  {
+    "type": "component",
+    "name": "badge-link",
+    "description": "Displays a badge with the link style.",
+    "content": "<Badge variant=\"link\">Details</Badge>",
+    "source": "https://ui.shadcn.com/docs/components/base/badge"
+  },
+  {
+    "type": "component",
+    "name": "button-outline",
+    "description": "Displays a button or a component that looks like a button.",
+    "content": "<Button variant=\"outline\">Outline</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button#outline"
+  },
+  {
+    "type": "component",
+    "name": "button-secondary",
+    "description": "Displays a button with the secondary style.",
+    "content": "<Button variant=\"secondary\">Secondary</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-ghost",
+    "description": "Displays a button with the ghost style.",
+    "content": "<Button variant=\"ghost\">Ghost</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-destructive",
+    "description": "Displays a button with the destructive style.",
+    "content": "<Button variant=\"destructive\">Destructive</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-link",
+    "description": "Displays a button with the link style.",
+    "content": "<Button variant=\"link\">Link</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-xs",
+    "description": "Displays a button in size xs.",
+    "content": "<Button size=\"xs\">Button</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-sm",
+    "description": "Displays a button in size sm.",
+    "content": "<Button size=\"sm\">Button</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-lg",
+    "description": "Displays a button in size lg.",
+    "content": "<Button size=\"lg\">Button</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-icon",
+    "description": "Displays a button in size icon.",
+    "content": "<Button size=\"icon\" aria-label=\"Add\">+</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-icon-xs",
+    "description": "Displays a button in size icon-xs.",
+    "content": "<Button size=\"icon-xs\" aria-label=\"Add\">+</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-icon-sm",
+    "description": "Displays a button in size icon-sm.",
+    "content": "<Button size=\"icon-sm\" aria-label=\"Add\">+</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "button-icon-lg",
+    "description": "Displays a button in size icon-lg.",
+    "content": "<Button size=\"icon-lg\" aria-label=\"Add\">+</Button>",
+    "source": "https://ui.shadcn.com/docs/components/base/button"
+  },
+  {
+    "type": "component",
+    "name": "separator-vertical",
+    "description": "Displays a vertical divider.",
+    "content": "<Separator orientation=\"vertical\" />",
+    "source": "https://ui.shadcn.com/docs/components/base/separator"
+  },
+  {
+    "type": "import",
+    "name": "sidebar",
+    "description": "Imports the components used to build a sidebar.",
+    "content": "import {\n  Sidebar,\n  SidebarContent,\n  SidebarFooter,\n  SidebarGroup,\n  SidebarHeader,\n} from \"@/components/ui/sidebar\"",
+    "source": "https://ui.shadcn.com/docs/components/base/sidebar"
+  },
+  {
+    "type": "component",
+    "name": "sidebar",
+    "description": "Displays a sidebar with a header, content groups, and a footer.",
+    "content": "<Sidebar>\n  <SidebarHeader />\n  <SidebarContent>\n    <SidebarGroup />\n    <SidebarGroup />\n  </SidebarContent>\n  <SidebarFooter />\n</Sidebar>",
+    "source": "https://ui.shadcn.com/docs/components/base/sidebar"
+  },
+  {
+    "type": "import",
+    "name": "sidebar-layout",
+    "description": "Imports the sidebar provider, trigger, and app sidebar.",
+    "content": "import { SidebarProvider, SidebarTrigger } from \"@/components/ui/sidebar\"\nimport { AppSidebar } from \"@/components/app-sidebar\"",
+    "source": "https://ui.shadcn.com/docs/components/base/sidebar"
+  },
+  {
+    "type": "component",
+    "name": "sidebar-layout",
+    "description": "Wraps the main content and app sidebar in a sidebar provider with a trigger.",
+    "content": "<SidebarProvider>\n  <AppSidebar />\n  <main>\n    <SidebarTrigger />\n    {children}\n  </main>\n</SidebarProvider>",
+    "source": "https://ui.shadcn.com/docs/components/base/sidebar"
+  },
+  {
+    "type": "component",
+    "name": "slider-vertical",
+    "description": "Displays a vertical slider.",
+    "content": "<Slider orientation=\"vertical\" defaultValue={[33]} aria-label=\"Volume\" />",
+    "source": "https://ui.shadcn.com/docs/components/base/slider#vertical"
+  },
+  {
+    "type": "component",
+    "name": "switch-sm",
+    "description": "Displays a compact switch.",
+    "content": "<Switch size=\"sm\" aria-label=\"Notifications\" />",
+    "source": "https://ui.shadcn.com/docs/components/base/switch"
+  },
+  {
+    "type": "import",
+    "name": "toaster",
+    "description": "Imports the toast viewport component.",
+    "content": "import { Toaster } from \"@/components/ui/toast\"",
+    "source": "https://ui.shadcn.com/docs/components/base/toast"
+  },
+  {
+    "type": "component",
+    "name": "toaster",
+    "description": "Mounts the toast viewport that renders notifications. Add it once in your root layout, then call `toast.add()` from anywhere.",
+    "content": "<Toaster />",
+    "source": "https://ui.shadcn.com/docs/components/base/toast"
+  },
+  {
+    "type": "component",
+    "name": "toggle-outline",
+    "description": "Displays a toggle with an outline.",
+    "content": "<Toggle variant=\"outline\">Bold</Toggle>",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle"
+  },
+  {
+    "type": "component",
+    "name": "toggle-sm",
+    "description": "Displays a toggle in size sm.",
+    "content": "<Toggle size=\"sm\">Bold</Toggle>",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle"
+  },
+  {
+    "type": "component",
+    "name": "toggle-lg",
+    "description": "Displays a toggle in size lg.",
+    "content": "<Toggle size=\"lg\">Bold</Toggle>",
+    "source": "https://ui.shadcn.com/docs/components/base/toggle"
+  }
+]

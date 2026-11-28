@@ -4,23 +4,15 @@ import type { CMContext, CMState, CMView, Snippet } from './types';
 
 const snippets: Snippet[] = catalog;
 
-const importSnippets = snippets
-  .filter(({ type }) => type === 'import')
-  .map((s) => ({
-    label: `sui-i-${s.name}`,
-    text: s.content,
-    description: s.description,
-    detail: 'shadcn/ui import',
-  }));
+const reactSnippets = snippets.map(({ type, name, content, description }) => ({
+  type,
+  label: type === 'import' ? `sui-i-${name}` : `sui-${name}`,
+  text: content,
+  description,
+  detail: `shadcn/ui ${type}`,
+}));
 
-const reactSnippets = snippets
-  .filter(({ type }) => type === 'component')
-  .map((s) => ({
-    label: `sui-${s.name}`,
-    text: s.content,
-    description: s.description,
-    detail: 'shadcn/ui component',
-  }));
+const importSnippets = reactSnippets.filter(({ type }) => type === 'import');
 
 function completions(filename = '') {
   if (/\.[jt]sx$/i.test(filename)) return reactSnippets;

@@ -41,20 +41,33 @@ async function generateSnippet(name, docsUrl) {
   ];
 }
 
-async function run() {
+async function getBaseUISnippets() {
   const res = await fetch('https://ui.shadcn.com/r/styles/base-nova/registry.json');
   const registry = await res.json();
+
+  const skipComponents = ['form', 'chart', 'sidebar'];
   const promises = registry.items
-    .filter((item) => item.type === 'registry:ui' && !['form', 'chart'].includes(item.name))
+    .filter((item) => item.type === 'registry:ui' && !skipComponents.includes(item.name))
     .map((item) => {
       const name = item.name;
       const docsUrl =
         item.meta?.links?.docs ?? `https://ui.shadcn.com/docs/components/base/${name}`;
       return generateSnippet(name, docsUrl);
     });
-  const snippets = (await Promise.all(promises))
-    .flat()
-    .sort((a, b) => a.name.localeCompare(b.name));
+
+  return (await Promise.all(promises)).flat();
+}
+
+async function getVariantsSnippets() {
+  const variantsPath = new URL('../snippets/variants.json', import.meta.url);
+  const variants = await asyncFs.readFile(variantsPath, 'utf8');
+  return JSON.parse(variants);
+}
+
+async function run() {
+  const snippets = [...(await getBaseUISnippets()), ...(await getVariantsSnippets())].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
 
   const snippetsPath = new URL('../src/snippets.json', import.meta.url);
   await asyncFs.writeFile(snippetsPath, JSON.stringify(snippets, null, 2));
