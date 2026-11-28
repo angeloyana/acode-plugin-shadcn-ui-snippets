@@ -2,21 +2,25 @@ import plugin from '../plugin.json';
 import catalog from './snippets.json';
 import type { CMContext, CMState, CMView, Snippet } from './types';
 
-const snippets: Record<string, Snippet> = catalog;
-const importSnippets = Object.keys(snippets).map((name) => ({
-  label: `sui-i-${name}`,
-  text: snippets[name].imports,
-  description: snippets[name].description,
-  detail: 'shadcn/ui import',
-}));
-const reactSnippets = importSnippets.concat(
-  Object.keys(snippets).map((name) => ({
-    label: `sui-${name}`,
-    text: snippets[name].jsx,
-    description: snippets[name].description,
-    detail: 'shadcn/ui JSX',
-  }))
-);
+const snippets: Snippet[] = catalog;
+
+const importSnippets = snippets
+  .filter(({ type }) => type === 'import')
+  .map((s) => ({
+    label: `sui-i-${s.name}`,
+    text: s.content,
+    description: s.description,
+    detail: 'shadcn/ui import',
+  }));
+
+const reactSnippets = snippets
+  .filter(({ type }) => type === 'component')
+  .map((s) => ({
+    label: `sui-${s.name}`,
+    text: s.content,
+    description: s.description,
+    detail: 'shadcn/ui component',
+  }));
 
 function completions(filename = '') {
   if (/\.[jt]sx$/i.test(filename)) return reactSnippets;
